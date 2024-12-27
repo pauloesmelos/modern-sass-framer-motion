@@ -1,5 +1,6 @@
 import React from 'react';
 import Faq from '../components/faq/Faq';
+import Footer from '../components/footer/Footer';
 import Hero from '../components/hero/Hero';
 import Insights from '../components/insights/Insights';
 import Navbar from '../components/navbar/Navbar';
@@ -17,6 +18,7 @@ const Home = () => {
       <Price />
       <Testimonials />
       <Faq />
+      <Footer />
     </div>
   )
 }

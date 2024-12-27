@@ -10,7 +10,7 @@ const Faq = () => {
   }, []);
 
   return (
-    <section className="w-full py-32">
+    <section className="w-full pt-32">
       <div className="w-full max-w-[1300px] mx-auto px-5">
         <div className="w-full">
             {/* title */}

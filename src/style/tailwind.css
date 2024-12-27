@@ -3,8 +3,22 @@
 @tailwind utilities;
 
 @layer base {
-
+   
 }
 .btn-shadow:hover {
     box-shadow: 0 0 15px rgb(230, 64, 230);
+}
+.animate-smile {
+    animation: animaSmile 1.5s infinite linear;
+}
+@keyframes animaSmile {
+    0%{
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }

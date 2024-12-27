@@ -1,7 +1,18 @@
 import { motion } from "framer-motion";
 import React from 'react';
+import { IoMenu } from "react-icons/io5";
+import MenuMobile from "./mobile/MenuMobile";
 
 const Navbar = () => {
+  const [mobile, setMobile] = React.useState(false);
+  const handleMobile = () => {
+    setMobile(state => !state);
+  }
+  React.useEffect(() => {
+    let body = document.body;
+    body.style.overflow = (mobile ? "hidden" : "auto");
+  }, [mobile]);
+
   return (
     <header className="w-full">
       <nav className="w-full max-w-[1300px] mx-auto px-5 py-4">
@@ -45,12 +56,16 @@ const Navbar = () => {
             <motion.button 
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: .9 }} 
-                className="px-5 py-2 border-2 border-black rounded-full font-medium hover:bg-purple-600 hover:text-white"
+                className="hidden lg:block px-5 py-2 border-2 border-black rounded-full font-medium hover:bg-purple-600 hover:text-white"
             >
                 Register
             </motion.button>
+            <button onClick={handleMobile} className="hover:opacity-50 duration-200 md:hidden">
+                <IoMenu size={35} />
+            </button>
         </div>
       </nav>
+      <MenuMobile mobile={mobile} handleMobile={handleMobile} />
     </header>
   )
 }

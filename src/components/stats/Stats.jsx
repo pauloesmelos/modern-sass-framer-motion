@@ -32,7 +32,6 @@ const Stats = () => {
             <motion.div 
               initial="hidden" 
               whileInView="visible" 
-              viewport={{ amount: .5 }} 
               variants={imageVariants} className="w-full lg:w-[80%] h-[450px] relative"
             >
                 <img className="object-cover w-full h-full rounded-3xl shadow-lg border-4 border-purple-500 shadow-purple-400" src={url_image}
