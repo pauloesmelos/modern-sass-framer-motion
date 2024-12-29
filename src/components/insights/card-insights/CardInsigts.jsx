@@ -21,7 +21,6 @@ const CardInsigts = ({ icon, date, title, description }) => {
         whileHover={{ transform: "translateY(-10px)" }} 
         initial="hidden"
         whileInView="visible"
-        viewport={{ amount: .5 }}
         variants={cardVariants}
         className="flex flex-col gap-2 bg-gray-100 border-4 border-white p-4 w-full lg:w-[500px] shadow-lg"
     >

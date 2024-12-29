@@ -25,25 +25,26 @@ const MenuMobile = ({ mobile, handleMobile }) => {
             </div>
             <div className="mt-20">
                 <ul className="flex flex-col gap-4">
-                    <li className="text-white hover:text-neutral-800 duration-200 text-3xl">
-                        <a href="#" rel="noreferrer noopener"># Portfolio</a>
+                    <li>
+                        <a className="text-white hover:text-neutral-800 duration-200 text-3xl" href="#" rel="noreferrer noopener"># Portfolio</a>
                     </li>
-                    <li className="text-white hover:text-neutral-800 duration-200 text-3xl">
-                        <a href="#" rel="noreferrer noopener"># Our Team</a>
+                    <li>
+                        <a className="text-white hover:text-neutral-800 duration-200 text-3xl" href="#" rel="noreferrer noopener"># Our Team</a>
                     </li>
-                    <li className="text-white hover:text-neutral-800 duration-200 text-3xl">
-                        <a href="#" rel="noreferrer noopener"># Careers</a>
+                    <li>
+                        <a className="text-white hover:text-neutral-800 duration-200 text-3xl" href="#" rel="noreferrer noopener"># Careers</a>
                     </li>
-                    <li className="text-white hover:text-neutral-800 duration-200 text-3xl">
-                        <a href="#" rel="noreferrer noopener"># About</a>
+                    <li>
+                        <a className="text-white hover:text-neutral-800 duration-200 text-3xl" href="#" rel="noreferrer noopener"># About</a>
                     </li>
                 </ul>
             </div>
         </div>
       </div>
       {/* div bottom */}
-      <div className="absolute bottom-4 left-0 w-full p-3 bg-white shadow-lg flex justify-center items-center gap-4">
-        <p className="font-medium text-lg text-purple-600 text-center">
+      <div className="absolute bottom-16 left-5 w-[90%] p-2 bg-white shadow-lg flex justify-center items-center gap-4 rounded-md
+         shadow-purple-800">
+        <p className="font-bold text-lg text-purple-600 text-center">
             Be Happy With Our
         </p>
         <span>
